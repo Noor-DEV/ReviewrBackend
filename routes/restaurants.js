@@ -5,11 +5,18 @@ const {
   updateRest,
   deleteRest,
   createRest,
+  getReviews,
+  createReview,
 } = require("../controllers/restaurants");
 const router = express.Router();
 router.post("/", createRest);
 router.get("/", getRests);
 router.get("/:id", get_Rest);
-router.patch("/:id", updateRest);
+router.put("/:id", updateRest);
 router.delete("/:id", deleteRest);
+
+//reviews.
+router.get("/:id/reviews", getReviews);
+router.post("/:id/reviews", createReview);
+
 module.exports = router;
