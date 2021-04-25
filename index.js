@@ -15,7 +15,4 @@ app.get("/", (req, res) => {
   });
 });
 app.use("/api/v1/rests", restsRoutes);
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log("UP and RUNING......");
-});
+app.listen(process.env.PORT);
