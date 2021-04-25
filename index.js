@@ -9,7 +9,7 @@ app.use(express.json());
 // Routes....
 app.get("/", (req, res) => {
   res.json({
-    message: "Welcome To Services API",
+    message: "Welcome To Reviewrz API",
     MainRoute: "/api/v1/rests",
     otherRoute: "api/v1/rests/:id",
   });
